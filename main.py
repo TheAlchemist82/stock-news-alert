@@ -89,7 +89,7 @@ if gain:
         client = Client(TWILIO_ACCOUNT_SID, TWILIO_AUTH_TOKEN)
         message = client.messages \
                 .create(
-                body=(f"TSLA: {percentage_difference}%{emoji}\nHeadline: {news_title[news]}\nBrief: {news_description[news]}"),
+                body=(f"{STOCK_NAME}: {percentage_difference}%{emoji}\nHeadline: {news_title[news]}\nBrief: {news_description[news]}"),
                 from_ = TWILIO_PHONE_NUMBER,
                 to = PHONE_NUMBER,
             )   
