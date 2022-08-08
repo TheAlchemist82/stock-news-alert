@@ -1,7 +1,6 @@
 import requests
 from datetime import datetime, timedelta
 from twilio.rest import Client
-import os
 import re
 
 yesterday = datetime.now() - timedelta(1)
